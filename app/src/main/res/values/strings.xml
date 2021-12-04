@@ -1,0 +1,118 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Repair City</string>
+    <string name="facebook_app_id"></string>
+    <string name="google_maps_id"></string>
+    <string name="parse_id"></string>
+    <string name="parse_key"></string>
+
+    <string name="welcome">Benvenuto su Repair City!</string>
+    <string name="welcome_description">Inizia a inviare segnalazioni\nper migliorare la tua città</string>
+
+    <string name="wt_title_1">Scopri le funzionalità</string>
+    <string name="wt_description_1">Naviga nell\'applicazione\nusando il menu a lato</string>
+    <string name="wt_title_2">Mappa</string>
+    <string name="wt_description_2">Scopri le segnalazioni vicino a te</string>
+    <string name="wt_title_3">Lista</string>
+    <string name="wt_description_3">Scorri la lista delle segnalazioni\ne ordinale come preferisci</string>
+    <string name="wt_title_4">Visualizza nel dettaglio</string>
+    <string name="wt_description_4">Esprimi un giudizio,\nsegna come risolta,\ncondividi con i tuoi amici</string>
+    <string name="wt_title_5">Segnala un problema</string>
+    <string name="wt_description_5">Scrivi una segnalazione\nimpostando la gravità\n e aggiungendo una foto</string>
+    <string name="wt_title_6">Visualizza tutte le tue segnalazioni</string>
+    <string name="wt_description_6">Contrassegna una segnalazione\ncome risolta o non risolta</string>
+
+    <string name="forced_sync_message">Avviata sincronizzazione</string>
+    <string name="finished_sync">Sincronizzazione conclusa</string>
+    <string name="wait_sync">Sincronizzazione in corso&#8230;</string>
+    <string name="wait_forced_sync">Sto aggiornando i dati con le nuove impostazioni</string>
+    <string name="waiting_message">Sto accedendo&#8230;</string>
+    <string name="first_use">Sto preparando l\'applicazione per il primo utilizzo</string>
+    <string name="title_no_network">Connessione Assente</string>
+    <string name="description_no_network">Controlla che il tuo dispositivo sia connesso ad internet</string>
+    <string name="upload_message">Sto caricando la segnalazione&#8230;</string>
+    <string name="online_upload_title">"Inserimento"</string>
+    <string name="online_upload_message">Segnalazione caricata con successo</string>
+    <string name="local_upload_title">Salvata in locale</string>
+    <string name="local_upload_message" tools:ignore="Typos">La segnalazione verrà caricata online il prima possibile</string>
+    <string name="warning_title">Attenzione</string>
+    <string name="warning_description">I campi non sono stati compilati in modo corretto</string>
+    <string name="facebook_not_installed">Applicazione di Facebook non installata</string>
+    <string name="twitter_not_installed">Applicazione di Twitter non installata</string>
+    <string name="text_ok_button">OK</string>
+    <string name="resolved_segnalation">Segnalazione risolta con successo</string>
+    <string name="go_to_settings">Impostazioni</string>
+    <string name="GPS_status">GPS Spento</string>
+    <string name="GPS_status_description">Attiva la geolocalizzazione sul tuo dispositivo</string>
+
+    <string name="add_photo">Aggiungi una foto</string>
+    <string name="add_photo_info">Scegli come aggiungere\nla foto della segnalazione</string>
+    <string name="camera">Fotocamera</string>
+    <string name="photos">Galleria</string>
+
+    <string name="resolve">Risolvi</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+
+    <string name="title_activity_map">Mappa</string>
+    <string name="title_activity_walkthrough">WalkthroughActivity</string>
+    <string name="title_activity_list">Lista</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_detail">Dettaglio</string>
+
+    <string-array name="list_tabs">
+        <item>DISTANZA</item>
+        <item>GRAVITÀ</item>
+        <item>RECENTI</item>
+        <item>POPOLARI</item>
+    </string-array>
+
+    <string-array name="profile_tabs">
+        <item>TUTTE</item>
+        <item>RISOLTE</item>
+        <item>NON RISOLTE</item>
+    </string-array>
+
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_profile">Profilo</string>
+    <string name="title_activity_add">Aggiungi</string>
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="title_activity_info">Info</string>
+    <string name="refresh">Aggiorna</string>
+    <string name="confirm">Conferma</string>
+    <string name="search_dimension">Dimensione della ricerca</string>
+    <string name="title">Titolo</string>
+    <string name="description_label">Descrizione:</string>
+    <string name="description_hint">Descrizione</string>
+    <string name="solved_question">Risolta?</string>
+    <string name="max_kilometers">50 km</string>
+    <string name="description_search_dimension">Verranno visualizzate solo le segnalazioni entro il raggio impostato</string>
+    <string name="user">Utente</string>
+    <string name="version">Versione 1.0</string>
+    <string name="priority">Gravità</string>
+    <string name="low">Bassa</string>
+    <string name="medium">Media</string>
+    <string name="high">Alta</string>
+    <string name="last_modified_date">Data ultima modifica:</string>
+    <string name="options">Opzioni</string>
+    <string name="drawer_icon">drawerIcon</string>
+    <string name="dialog_list_item">dialog_list_item</string>
+    <string name="info_layout_background">info_layout_background</string>
+    <string name="next_button">next_button</string>
+    <string name="close_button_walktrough">close_button</string>
+    <string name="prev_button_walktrough">prev_button</string>
+    <string name="background_drawer">background_drawer</string>
+    <string name="launcher_icon_info">launcher_icon</string>
+    <string name="background_profile_activity">background_profile</string>
+    <string name="segnalation_priority_image">segnalation_priority</string>
+    <string name="circle_distance_sengalation_cell">circle_segnalation_distance</string>
+    <string name="mockup_image">mockup_image</string>
+    <string name="thumbs_up_image_empty">thumbs_up_image_empty</string>
+    <string name="thumbs_up_image_fill">thumbs_up_image_fill</string>
+    <string name="thumbs_down_image_empty">thumbs_down_image_empty</string>
+    <string name="thumbs_down_image_fill">thumbs_down_image_fill</string>
+    <string name="add_segnalation_photo_image">add_segnalation_photo_image</string>
+    <string name="detail_sengalation_image_loading">detail_segnalation_image_loading</string>
+
+</resources>

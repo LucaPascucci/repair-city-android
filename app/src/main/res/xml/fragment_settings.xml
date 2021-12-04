@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.infinitycode.repaircity.SeekBarPreference
+        android:layout="@layout/slider_layout" />
+
+    <com.infinitycode.repaircity.MyPreferenceCategory
+        android:title="DILLO A UN AMICO">
+
+        <Preference
+            android:key="facebook_share"
+            android:title="Facebook"
+            android:icon="@drawable/ic_facebook_blue"/>
+
+        <Preference
+            android:key="twitter_share"
+            android:title="Twitter"
+            android:icon="@drawable/ic_twitter"/>
+
+        <Preference
+            android:key="mail_share"
+            android:title="Mail"
+            android:icon="@drawable/ic_mail"/>
+
+        <Preference
+            android:key="sms_share"
+            android:title="SMS"
+            android:icon="@drawable/ic_sms"/>
+
+    </com.infinitycode.repaircity.MyPreferenceCategory>
+
+    <PreferenceCategory>
+
+        <Preference
+            android:key="repeat_tutorial"
+            android:title="Ripeti il tutorial"
+            android:icon="@drawable/ic_repeat_tutorial"/>
+
+        <Preference
+            android:key="info_settings"
+            android:title="Info"
+            android:icon="@drawable/ic_info_settings"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

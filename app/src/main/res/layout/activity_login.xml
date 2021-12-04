@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seattle"
+    tools:context="com.infinitycode.repaircity.activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/density_pixel_20"
+        android:text="@string/welcome"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/density_pixel_20"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/welcome_description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/text_17"
+        android:textStyle="normal"
+        android:textColor="@color/white"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false"
+        android:drawableLeft="@drawable/ic_facebook_white"
+        android:paddingBottom="@dimen/density_pixel_20"
+        android:paddingTop="@dimen/density_pixel_20"
+        android:textSize="@dimen/text_20"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

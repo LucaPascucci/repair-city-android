@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:layout="@layout/info_layout"
+        android:selectable="false" />
+
+    <Preference
+        android:icon="@drawable/ic_contact_us"
+        android:key="contact_us"
+        android:title="Contattaci" />
+
+    <Preference
+        android:selectable="false"
+        android:summary="Copyright © 2015 Infinity Code.\nAll rights reserved." />
+
+</PreferenceScreen>

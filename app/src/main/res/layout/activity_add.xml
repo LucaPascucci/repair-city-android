@@ -1,0 +1,156 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infinitycode.repaircity.activity.AddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainLayout">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <ScrollView
+            android:id="@+id/scroll_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:layoutDirection="ltr">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map_add"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/titolo_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/title"
+                    android:maxLength="26"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/descrizione_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/description_hint"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="15"
+                    android:minLines="1"
+                    android:scrollbars="vertical"/>
+
+                <TextView
+                    android:id="@+id/priority_label_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    android:text="@string/priority" />
+
+                <LinearLayout
+                    android:id="@+id/gravity_buttons_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bassa_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/accent"
+                        android:text="@string/low" />
+
+                    <Button
+                        android:id="@+id/media_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/orange"
+                        android:text="@string/medium" />
+
+                    <Button
+                        android:id="@+id/alta_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:text="@string/high" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_user_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <com.pkmmte.view.CircularImageView
+                        android:id="@+id/user_image_add"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/ic_default_user"
+                        app:border="true"
+                        app:shadow="true"
+                        app:border_width="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/user_name_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:textSize="20sp"
+                        android:text="@string/user" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/segnalation_photo_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/add_segnalation_photo_image">
+                </ImageView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_add_drawer"
+        android:name="com.infinitycode.repaircity.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="density_pixel_20">20dp</dimen>
+    <dimen name="density_pixel_5">5dp</dimen>
+
+    <dimen name="navigation_drawer_width">260dp</dimen>
+    <dimen name="nav_drawer_margin_top">32dp</dimen>
+
+    <dimen name="distance_text_size">10sp</dimen>
+</resources>
